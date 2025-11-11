@@ -11,7 +11,7 @@ const Footer = () => {
       transition={{ duration: 0.5 }}
     >
       <p className="text-gray-700 dark:text-gray-300 text-sm">
-        © {currentYear} Cybersecurity Portfolio by{" "}
+        © {currentYear} My Portfolio{" "}
         <span className="font-semibold text-blue-600 dark:text-blue-400">
           [̲̅m][̲̅i][̲̅m][̲̅i][̲̅a][̲̅d]
         </span>
