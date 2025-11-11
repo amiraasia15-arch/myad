@@ -15,7 +15,7 @@ const Footer = () => {
         <span className="font-semibold text-blue-600 dark:text-blue-400">
           [̲̅m][̲̅i][̲̅m][̲̅i][̲̅a][̲̅d]
         </span>
-        . Built with ❤ using React, TailwindCSS & Framer Motion.
+        . Built with 🤪 using React, TailwindCSS & Framer Motion.
       </p>
     </motion.footer>
   );
