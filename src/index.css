@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+class{
+    color: black
+    background-color white
+}
+
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;               /* distance below text */
+  height: 2px;
+  background: rgb(243, 252, 3);        /* teal-400 fallback */
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.5s cubic-bezier(.2,.9,.2,1);
+}
+
+.animated-underline:hover::after,
+.animated-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* dark mode color for the underline */
+.dark .animated-underline::after {
+  background: rgb(243, 252, 3)9;        /* pink-500 in dark mode */
+}
+
+/* small focus ring */
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.12);
+  border-radius: 6px;
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animated-underline::after {
+    transition: none;
+    transform: scaleX(1);
+  }
+}
+
+/* reduce tap highlight on mobile and make animated underline behave on touch */
+.animated-underline {
+  -webkit-tap-highlight-color: transparent;
+}
+
