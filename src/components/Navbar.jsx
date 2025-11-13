@@ -57,7 +57,7 @@ const Navbar = () => {
           <motion.button
             onClick={() => setDarkMode(!darkMode)}
             whileTap={{ rotate: 180, scale: 0.9 }}
-            className="p-2 rounded-full border border-gray-300 dark:border-gray-700 transition"
+            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white hover:bg-pink-200 dark:hover:bg-pink-500 transition-colors duration-200"
             aria-label="Toggle Theme"
           >
             {darkMode ? (
@@ -88,7 +88,7 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800"
+          className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-70"
         >
           <div className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => (
@@ -109,9 +109,9 @@ const Navbar = () => {
               className="p-2 rounded-full border border-gray-300 dark:border-gray-700 mt-2"
             >
               {darkMode ? (
-                <Sun className="w-5 h-5 text-yellow-400" />
+                <Sun className="w-5 h-5 text-yellow-300" />
               ) : (
-                <Moon className="w-5 h-5 text-blue-500" />
+                <Moon className="w-5 h-5 text-purple-500" />
               )}
             </motion.button>
           </div>
