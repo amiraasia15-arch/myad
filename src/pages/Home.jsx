@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import SectionHeader from "../components/SectionHeader";
 import { Link } from "react-router-dom";
+import heart from "../assets/heart.svg"
 
 const Home = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-white dark:bg-gray-950 transition-colors duration-300">
       <motion.img
-        src="/images/avatar.png"
+        src={heart}
         alt="Profile"
-        className="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 shadow-lg"
+        className="w-40 h-40 rounded-full border-4 border-green-200 mb-6 shadow-lg"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
@@ -19,7 +20,7 @@ const Home = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        Hello, I'm <span className="text-blue-600 dark:text-blue-400">Cyberflex</span>
+        𝐻𝑒𝓁𝓁𝑜 𝐼'𝓂 <span className="text-purple-700 dark:text-yellow-300">𝑀𝐼𝑀𝐼</span>
       </motion.h1>
       <motion.p
         className="mt-3 text-gray-600 dark:text-gray-300 max-w-xl"
@@ -39,13 +40,13 @@ const Home = () => {
       >
         <Link
           to="/projects"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          className="bg-purple-600 dark:bg-yellow-300 hover:bg-pink-500 text-white dark:text-black hover:text-shadow-fuchsia-200 dark:hover:text-white px-5 py-2 rounded-lg font-medium transition"
         >
           View My Projects
         </Link>
         <Link
           to="/contact"
-          className="border border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white px-5 py-2 rounded-lg font-medium transition"
+          className="border border-purple-600 dark:border-yellow-300 text-black dark:text-green-200 hover:bg-pink-500 hover:text-white px-5 py-2 rounded-lg font-medium transition"
         >
           Contact Me
         </Link>
