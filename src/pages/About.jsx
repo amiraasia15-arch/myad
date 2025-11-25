@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-100 py-16 px-6 transition-colors duration-300">
       <SectionHeader
-        title="About Me"
+        title="̲A̲̲b̲̲o̲̲u̲̲t̲ ̲M̲̲e̲"
         subtitle="Who I am, what I do, and why I’m passionate about cybersecurity."
       />
 
@@ -17,9 +17,9 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          I’m <span className="font-semibold text-blue-600 dark:text-blue-400">𝓜𝓘𝓜𝓘</span>,  
-          a full-stack developer and cybersecurity enthusiast.  
-          I love building secure applications and sharing my knowledge with others in the tech community.
+          I’m <span className="font-semibold text-[#14b9a3] dark:text-pink-500">𝓜𝓘𝓜𝓘</span>,  
+          a web developer and cybersecurity enthusiast.  
+          I love building secure websitess and sharing my knowledge with others in the tech community.
           My goal is to help others understand security from a developer’s perspective.
         </motion.p>
 

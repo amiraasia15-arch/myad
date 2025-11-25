@@ -1,5 +1,5 @@
 export const SITE_NAME = "𝓜𝓘𝓜𝓘'𝓢 𝓟𝓞𝓡𝓣𝓕𝓞𝓛𝓘𝓞";
-export const SITE_URL = "https://cyberflex-portfolio.vercel.app";
+export const SITE_URL = "https://myad-fhe4.vercel.app/";
 export const EMAIL = "davinchibella2@gmail.com";
 
 export const SOCIALS = {

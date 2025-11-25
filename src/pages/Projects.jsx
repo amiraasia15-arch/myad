@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-100 py-16 px-6 transition-colors duration-300">
       <SectionHeader
-        title="Cybersecurity Projects"
+        title="̲C̲̲y̲̲b̲̲e̲̲r̲̲s̲̲e̲̲c̲̲u̲̲r̲̲i̲̲t̲̲y̲ ̲P̲̲r̲̲o̲̲j̲̲e̲̲c̲̲t̲̲s̲"
         subtitle="Explore beginner-friendly security projects built to strengthen fundamental concepts."
       />
 

@@ -88,7 +88,7 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
-          className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-70"
+          className="md:hidden bg-white dark:bg-transparent border-t border-gray-200 dark:border-gray-70"
         >
           <div className="flex flex-col items-center py-4 space-y-4">
             {navLinks.map((link) => (

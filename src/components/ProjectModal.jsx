@@ -13,7 +13,7 @@ const ProjectModal = ({ project, onClose }) => {
         exit={{ opacity: 0 }}
       >
         <motion.div
-          className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl max-w-lg w-full p-6 relative border border-gray-300 dark:border-gray-700"
+          className="bg-black/20 dark:bg-black/40 rounded-2xl shadow-2xl max-w-lg w-full p-6 relative border border-gray-300 dark:border-gray-700"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0 }}
@@ -30,10 +30,10 @@ const ProjectModal = ({ project, onClose }) => {
             alt={project.title}
             className="rounded-xl w-full h-52 object-cover mb-4"
           />
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+          <h2 className="text-2xl font-bold text-white dark:text-gray-100">
             {project.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm">
+          <p className="text-white dark:text-white mt-2 text-m">
             {project.description}
           </p>
 
@@ -53,11 +53,23 @@ const ProjectModal = ({ project, onClose }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-               className="mt-5 inline-block text-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition"
+               className="mt-5 inline-block text-center bg-black/70 hover:bg-pink-500 text-white font-medium px-4 py-2 rounded-md transition"
             >
               View Project
             </a>
           )}
+
+
+          {project.link && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block text-white text-center bg-black/70 hover:bg-pink-500 hover:text-white font-medium px-4 py-2 rounded-md"
+            >
+              🤖 Github Link
+            </a>
+          )}
         </motion.div>
       </motion.div>
     </AnimatePresence>

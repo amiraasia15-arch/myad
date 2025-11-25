@@ -20,7 +20,7 @@ const Home = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        𝐻𝑒𝓁𝓁𝑜 𝐼'𝓂 <span className="text-purple-700 dark:text-yellow-300">𝑀𝐼𝑀𝐼</span>
+        𝐻𝑒𝓁𝓁𝑜 𝐼'𝓂 <span className="text-purple-700 dark:text-yellow-300">̲M̲̲i̲̲m̲̲i̲</span>
       </motion.h1>
       <motion.p
         className="mt-3 text-gray-600 dark:text-gray-300 max-w-xl"
