@@ -1,20 +1,20 @@
 import passwordStrengthChecker from "../assets/Password-Strenght-Checker.png";
 import cybersecurityDashboard from "../assets/cyberdash.png";
-// // import portfolioimage1 from "../assets/portfolioimage1.png";
-// // import ipchecker from "../assets/ipchecker.png";
+import portfolioimage from "../assets/myportfolio.png";
+import ipchecker from "../assets/ipinfofinder.png";
 
 
 const projects = [
-  // {
-  //   id: 1,
-  //   title: "̲̲M̲̲y̲ ̲P̲̲o̲̲r̲̲t̲̲f̲̲o̲̲l̲̲i̲̲o̲",
-  //   image: "/images/projects/qr-attendance.png",
-  //   description:
-  //     "A real-time attendance tracking system using QR codes and Firebase. Built with React, Vite, and Firestore for real-time updates.",
-  //   tech: ["React", "Firebase", "Tailwind CSS", "Vite"],
-  //   link: "https://cyberflex-attendance.vercel.app",
-  //   github: "https://github.com/Cyb3rflex/qr-attendance-system",
-  // },
+  {
+    id: 1,
+    title: "̲̲M̲̲y̲ ̲P̲̲o̲̲r̲̲t̲̲f̲̲o̲̲l̲̲i̲̲o̲",
+    image:  portfolioimage,
+    description:
+      "A real-time attendance tracking system using QR codes and Firebase. Built with React, Vite, and Firestore for real-time updates.",
+    tech: ["React", "Firebase", "Tailwind CSS", "Vite"],
+    link: "https://myad-fhe4.vercel.app/",
+    github: "https://github.com/amiraasia15-arch/myad.git",
+  },
   {
     id: 2,
     title: "̲P̲a̲̲s̲̲s̲̲w̲̲o̲̲r̲̲d̲ ̲S̲̲t̲̲r̲̲e̲̲n̲̲g̲̲h̲̲t̲ ̲C̲̲h̲̲e̲̲c̲̲k̲̲e̲̲r̲",
@@ -35,16 +35,16 @@ const projects = [
       link: "https://cybersecurity-dashboard-navy.vercel.app/",
     github: "https://github.com/amiraasia15-arch/Cybersecurity-Dashboard.git",
   },
-  // {
-  //   id: 4,
-  //   title: "̲I̲̲P̲ ̲C̲̲h̲̲e̲̲c̲̲k̲̲e̲̲r̲",
-  //   image: "/images/projects/pentest-lab.png",
-  //   description:
-  //     "A mini pentesting environment showcasing vulnerable and secure Node.js apps for ethical hacking exercises.",
-  //   tech: ["Node.js", "Express", "Docker"],
-  //   link: "https://github.com/Cyb3rflex/pentest-lab",
-  //   github: "https://github.com/Cyb3rflex/pentest-lab",
-  // },
+  {
+    id: 4,
+    title: "̲I̲̲P̲ ̲C̲̲h̲̲e̲̲c̲̲k̲̲e̲̲r̲",
+    image:  ipchecker,
+    description:
+      "A mini pentesting environment showcasing vulnerable and secure Node.js apps for ethical hacking exercises.",
+    tech: ["Node.js", "Express", "Docker"],
+    link: "https://vercel.com/mimiads-projects?repo=https://github.com/amiraasia15-arch/Ip-info-finder",
+    github: "https://github.com/amiraasia15-arch/Ip-info-finder.git",
+  },
   // {
   //   id: 5,
   //   title: "The Ultimate Money-Saving Blueprint",

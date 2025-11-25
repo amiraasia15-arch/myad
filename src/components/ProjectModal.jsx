@@ -49,27 +49,28 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
 
           {project.link && (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-               className="mt-5 inline-block text-center bg-black/70 hover:bg-pink-500 text-white font-medium px-4 py-2 rounded-md transition"
-            >
-              View Project
-            </a>
-          )}
+  <div className="flex gap-4 mt-5">
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block text-center bg-black/70 hover:bg-pink-500 text-white font-medium px-4 py-2 rounded-md transition"
+    >
+      View Project
+    </a>
 
-
-          {project.link && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-block text-white text-center bg-black/70 hover:bg-pink-500 hover:text-white font-medium px-4 py-2 rounded-md"
-            >
-              🤖 Github Link
-            </a>
-          )}
+    {project.github && (
+      <a
+        href={project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block text-center bg-black/70 hover:bg-pink-500 text-white font-medium px-4 py-2 rounded-md transition"
+      >
+        🤖 Github Link
+      </a>
+    )}
+  </div>
+)}
         </motion.div>
       </motion.div>
     </AnimatePresence>
